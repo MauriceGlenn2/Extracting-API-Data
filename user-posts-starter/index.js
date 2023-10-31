@@ -11,11 +11,6 @@ async function main (){
 }
 main()
 
-function showUserPost(id){
-  window.location.href = ``
-  console.log(id)
-
-}
 
 function userHTML (user) {
   return `<div class="user-card" onClick="showUserPost(${user.id})">
@@ -26,4 +21,8 @@ function userHTML (user) {
                 <p><b>Website:</b> <a href="https://${user.website}" target="_blank">${user.website}</a></p>
             </div>
           </div>`;
+}
+function showUserPost(id) {
+  window.location.href = ``;
+  console.log(id);
 }
